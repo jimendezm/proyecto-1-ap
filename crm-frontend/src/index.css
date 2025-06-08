@@ -1,0 +1,23 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* 👈 evita scroll en toda la página */
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .app-container {
+    flex-direction: column;
+  }
+}
