@@ -3,8 +3,8 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import Clients from './pages/Clients';
 import Contacts from './pages/Contacts';
+import Deals from './pages/Deals';
 import Tasks from './pages/Tasks';
-import Reports from './pages/Reports';
 import './App.css'; // Asegúrate de tener un archivo CSS para estilos globales
 
 function App() {
@@ -25,8 +25,8 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/clients" element={<Clients />} />
               <Route path="/contacts" element={<Contacts />} />
+              <Route path="/deals" element={<Deals />} />
               <Route path="/tasks" element={<Tasks />} />
-              <Route path="/reports" element={<Reports />} />
             </Routes>
           </div>
         </div>

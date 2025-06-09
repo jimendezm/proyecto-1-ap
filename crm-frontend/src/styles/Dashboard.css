@@ -1,0 +1,87 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background-color: #f0f4fa;
+  border: 1px solid #d0d7e2;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: #1b7bf6;
+}
+
+.filter-button.active {
+  background-color: #1b7bf6;
+  color: white;
+  border-color: #1b7bf6;
+}
+
+.kpi-card {
+  border-left: 4px solid #00f2ff;
+}
+
+.kpi-card:hover {
+  border-left-color: #00b5ff;
+}
+
+.chart-container {
+  max-width: 300px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.chart-labels p {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+.chart-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.chart-box-small {
+  flex: 0 1 32%;
+  min-width: 250px;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.chart-box-large {
+  flex: 1 1 65%;
+  min-width: 300px;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.chart-box-small canvas,
+.chart-box-large canvas {
+  width: 100% !important;
+  max-height: 290px !important; /* 👈 cambia este valor según prefieras */
+  height: auto !important;
+}
+
+
+@media (max-width: 900px) {
+  .chart-box-small,
+  .chart-box-large {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

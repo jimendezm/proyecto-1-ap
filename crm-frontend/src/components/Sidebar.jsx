@@ -1,13 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
-import { MdDashboard, MdPeople, MdContacts, MdChecklist, MdAssessment } from 'react-icons/md';
+import { MdDashboard, MdPeople, MdContacts, MdChecklist, MdAssessment, MdInbox, MdHandshake } from 'react-icons/md';
 import '../styles/Sidebar.css';
 
 const navItems = [
   { to: '/', label: 'Dashboard', icon: <MdDashboard /> },
-  { to: '/clients', label: 'Clientes', icon: <MdPeople /> },
-  { to: '/contacts', label: 'Contactos', icon: <MdContacts /> },
-  { to: '/tasks', label: 'Tareas', icon: <MdChecklist /> },
-  { to: '/reports', label: 'Reportes', icon: <MdAssessment /> },
+  { to: '/clients', label: 'Inbox', icon: <MdInbox /> },
+  { to: '/contacts', label: 'Contacts', icon: <MdContacts /> },
+  { to: '/deals', label: 'Deals', icon: <MdHandshake /> },
+  { to: '/tasks', label: 'Tasks', icon: <MdChecklist /> },
 ];
 
 const Sidebar = () => {
@@ -15,7 +15,9 @@ const Sidebar = () => {
 
   return (
     <aside className="sidebar">
-      <h2 className="sidebar-title">CRM Demo</h2>
+      <div className="logo-container">
+        <img src="./logo/logoOficial.png" alt="WataCRM Logo" className="logo-image" />
+      </div>
       <ul className="sidebar-list">
         {navItems.map(({ to, label, icon }) => (
           <li key={to}>
@@ -30,6 +32,7 @@ const Sidebar = () => {
         ))}
       </ul>
     </aside>
+
   );
 };
 

@@ -20,14 +20,6 @@
 }
 
 
-.sidebar-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: var(--color5);
-}
-
 .sidebar-list {
   list-style: none;
   display: flex;
@@ -99,4 +91,15 @@
   .sidebar-title {
     display: none;
   }
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
 }
