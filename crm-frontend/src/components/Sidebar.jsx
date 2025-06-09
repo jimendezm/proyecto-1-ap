@@ -1,12 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
+import { MdDashboard, MdPeople, MdContacts, MdChecklist, MdAssessment } from 'react-icons/md';
 import '../styles/Sidebar.css';
 
 const navItems = [
-  { to: '/', label: 'Dashboard', icon: '📊' },
-  { to: '/clients', label: 'Clientes', icon: '👥' },
-  { to: '/contacts', label: 'Contactos', icon: '📇' },
-  { to: '/tasks', label: 'Tareas', icon: '✅' },
-  { to: '/reports', label: 'Reportes', icon: '📑' },
+  { to: '/', label: 'Dashboard', icon: <MdDashboard /> },
+  { to: '/clients', label: 'Clientes', icon: <MdPeople /> },
+  { to: '/contacts', label: 'Contactos', icon: <MdContacts /> },
+  { to: '/tasks', label: 'Tareas', icon: <MdChecklist /> },
+  { to: '/reports', label: 'Reportes', icon: <MdAssessment /> },
 ];
 
 const Sidebar = () => {
@@ -20,9 +21,7 @@ const Sidebar = () => {
           <li key={to}>
             <Link
               to={to}
-              className={`sidebar-link ${
-                location.pathname === to ? 'active' : ''
-              }`}
+              className={`sidebar-link ${location.pathname === to ? 'active' : ''}`}
             >
               <span className="icon">{icon}</span>
               {label}

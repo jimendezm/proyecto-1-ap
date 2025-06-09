@@ -66,6 +66,14 @@
   line-height: 1;
 }
 
+.icon {
+  font-size: 1.4rem;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {

@@ -5,13 +5,14 @@ import Clients from './pages/Clients';
 import Contacts from './pages/Contacts';
 import Tasks from './pages/Tasks';
 import Reports from './pages/Reports';
+import './App.css'; // Asegúrate de tener un archivo CSS para estilos globales
 
 function App() {
   return (
     <BrowserRouter>
               <div style={{
           display: 'flex',
-          height: '98vh',
+          height: '100vh',
           overflow: 'hidden'
         }}>
           <Sidebar />
