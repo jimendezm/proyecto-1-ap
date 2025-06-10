@@ -96,10 +96,11 @@
 .logo-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .logo-image {
-  width: 400px;
-  height: 250px;
+  width: 550px;
+  height: 90px;
   object-fit: cover;
 }
